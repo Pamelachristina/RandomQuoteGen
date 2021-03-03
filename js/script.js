@@ -10,7 +10,7 @@ project 1 - A Random Quote Generator
 
  // Create an Array of objects to store the data for quotes 
 
- let quotes = [
+ const quotes = [
    {
      "quote": "I've come to the realisation that I have absolutely no idea what I'm doing half the time.",
      "source": "David Bowie",
@@ -73,7 +73,7 @@ project 1 - A Random Quote Generator
   }
 
  ]
- {};
+
 
 
 
@@ -81,6 +81,23 @@ project 1 - A Random Quote Generator
 /***
  * `getRandomQuote` function
 ***/
+ function getRandomQuote (array){
+   //Creates the random number
+   let randomNumber = Math.floor(Math.random() * quotes.length +1);
+   
+  
+   for (var i = 0; i < array.length; i++) {
+    var randomQuote = array[randomNumber];
+    
+  };
+    
+  return randomQuote; 
+  
+ };
+   
+ let result = getRandomQuote(quotes);
+
+
 
 
 
