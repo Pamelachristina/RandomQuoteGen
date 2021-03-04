@@ -95,6 +95,9 @@ project 1 - A Random Quote Generator
   };
 
   let result = getRandomQuote(quotes);
+  let selectHtml = " ";
+  let selectQuote;
+  
 
  
 
@@ -106,31 +109,49 @@ project 1 - A Random Quote Generator
  * `printQuote` function
 ***/
  function printQuote () {
-   //This variable will hold the random quote object from getRandomQuote()
-    selectQuote = getRandomQuote();
-    selectHtml = `<p class= "quotes"> ${quotes.quote}</p>
-                 < class= "source"> ${quotes.source}
-                    
-  if (selectQuote.property("citation")){
-    selectHtml = <span class="citation">${quotes.citation}</span>
+  // 1. Create a variable that calls the getRandomQuote() 
+  // function
+  selectQuote = getRandomQuote();
 
-  }else if(selectQuote.property("year")){
-    selectHtml = <span class="year">${quotes.year}</span>
-    </p>`
+  // 2. Create a variable that initiates your HTML string with 
+  // the first two <p></p> elements, their classNames, 
+  // and the quote and source properties, but leave off 
+  // the second closing `</p>` tag for now
+  selectHtml = `<p class= "quotes"> ${quotes.quote}</p> <p class= "source"> ${quotes.source}`
+
+  // 3. Use an if statement to check if the citation property 
+  // exists, and if it does, concatenate a <span></span> 
+  // element, appropriate className, and citation property 
+  // to the HTML string
+  if (selectQuote.property("citation")){
+    selectHtml = `<span class="citation">${quotes.citation}</span>`
+  };
+
+
+
+  // 4. Use an if statement to check of the year property exists, 
+  // and if it does, concatenate a <span></span> element, 
+  // appropriate className, and year property to the HTML 
+  //string
+  if(selectQuote.property("year")){
+    selectHtml = `<span class="year">${quotes.year}</span>
   
   };
-   
-                     
 
 
+  // 5. After the two if statements, concatenate the closing </p> 
+  // tag to the HTML string
+  </p>`
 
- 
-
-
+  // 6. set the innerHTML of the quote-box div to equal the 
+  // complete HTML string
+  document.getElementById('quote-box').innerHTML = selectHtml;
+  
+  
 
 /***
  * click event listener for the print quote button
  * DO NOT CHANGE THE CODE BELOW!!
 ***/
-document.getElementById('quote-box').innerHTML = selectHtml;
+
 document.getElementById('load-quote').addEventListener("click", printQuote, false);
