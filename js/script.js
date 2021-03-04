@@ -83,17 +83,15 @@ project 1 - A Random Quote Generator
 ***/
  function getRandomQuote (array){
    //Creates the random number
-   let randomNumber = Math.floor(Math.random() * quotes.length +1);
+   let randomNumber = Math.floor(Math.random() * quotes.length);
    
-  
    for (var i = 0; i < array.length; i++) {
     var randomQuote = array[randomNumber];
+    console.log(randomNumber);
     
   };
-    
   return randomQuote; 
-  
- };
+};
    
  let result = getRandomQuote(quotes);
 
