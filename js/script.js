@@ -82,21 +82,21 @@ project 1 - A Random Quote Generator
  * `getRandomQuote` function
 ***/
  function getRandomQuote (array){
-   //Creates the random number
+   //Create the variable that generates a random number between zero and the last index in the quotes array
    let randomNumber = Math.floor(Math.random() * quotes.length);
    //console.log(randomNumber);
-   //console.log(quotes[randomNumber]);
+   //console.log(getRandomQuote);
 
+   
+   
+   //Use the random number variable and bracket notation to grab a random object from the 'quotes' array 
    return quotes[randomNumber];
    
-
-    
   };
 
- 
+  let result = getRandomQuote(quotes);
 
-   
- let result = getRandomQuote(quotes);
+ 
 
 
 
@@ -107,21 +107,30 @@ project 1 - A Random Quote Generator
 ***/
  function printQuote () {
    //This variable will hold the random quote object from getRandomQuote()
-   let randomQuoteObj = getRandomQuote(quotes);
-   let htmlString = `<p class= "quote"> ${quotes} </p>
-                     <p class= "source"> ${quotes[1]}
-                     <span class= "citation"> ${quotes[2]} </span>
-                     <span class= "year"> ${quotes[3]} </span> </p>`
+    selectQuote = getRandomQuote();
+    selectHtml = `<p class= "quotes"> ${quotes.quote}</p>
+                 < class= "source"> ${quotes.source}
+                    
+  if (selectQuote.property("citation")){
+    selectHtml = <span class="citation">${quotes.citation}</span>
+
+  }else if(selectQuote.property("year")){
+    selectHtml = <span class="year">${quotes.year}</span>
+    </p>`
+  
+  };
    
+                     
 
- };
 
- printQuote();
+
+ 
+
 
 
 /***
  * click event listener for the print quote button
  * DO NOT CHANGE THE CODE BELOW!!
 ***/
-
+document.getElementById('quote-box').innerHTML = selectHtml;
 document.getElementById('load-quote').addEventListener("click", printQuote, false);
