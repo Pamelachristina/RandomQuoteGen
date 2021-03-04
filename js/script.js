@@ -84,10 +84,16 @@ project 1 - A Random Quote Generator
  function getRandomQuote (array){
    //Creates the random number
    let randomNumber = Math.floor(Math.random() * quotes.length);
-   console.log(randomNumber);
-   getRandomQuote(quotes);
+   //console.log(randomNumber);
+   //console.log(quotes[randomNumber]);
+
+   return quotes[randomNumber];
+   
+
     
   };
+
+ 
 
    
  let result = getRandomQuote(quotes);
@@ -99,7 +105,18 @@ project 1 - A Random Quote Generator
 /***
  * `printQuote` function
 ***/
+ function printQuote () {
+   //This variable will hold the random quote object from getRandomQuote()
+   let randomQuoteObj = getRandomQuote(quotes);
+   let htmlString = `<p class= "quote"> ${quotes} </p>
+                     <p class= "source"> ${quotes[1]}
+                     <span class= "citation"> ${quotes[2]} </span>
+                     <span class= "year"> ${quotes[3]} </span> </p>`
+   
 
+ };
+
+ printQuote();
 
 
 /***
