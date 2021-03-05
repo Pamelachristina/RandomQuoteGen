@@ -13,4 +13,4 @@ We were asked to create an app that displays random famous quotes each time a bu
 * [x] Practice Basic Javascript Functions
 * [x] Practice Javascript Math Methods
 
-![caption](RandomQuoteGen/project1.mov) 
+![Project 1 Video](https://youtu.be/CbAiVayMan4)
