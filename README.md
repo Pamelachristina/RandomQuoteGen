@@ -12,3 +12,6 @@ We were asked to create an app that displays random famous quotes each time a bu
 * [x] Practice Object Literals
 * [x] Practice Basic Javascript Functions
 * [x] Practice Javascript Math Methods
+
+
+[![Alt text for your video](https://img.youtube.com/vi/VIDEO-ID/0.jpg)](http://www.youtube.com/watch?v=VIDEO-ID)
