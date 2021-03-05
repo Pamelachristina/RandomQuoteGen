@@ -12,5 +12,14 @@ We were asked to create an app that displays random famous quotes each time a bu
 * [x] Practice Object Literals
 * [x] Practice Basic Javascript Functions
 * [x] Practice Javascript Math Methods
+* [x] Practice Conditional Statements
+* [x] Practice If and Else If Statements
+* [x] Practice Accessing Object Properties
 
-![Project 1 Video](https://youtu.be/CbAiVayMan4)
+
+
+## Project Preview  
+- - -
+- - -
+
+![hippo](https://media.giphy.com/media/KE0ftVImVTZfKTcWRd/giphy.gif)
