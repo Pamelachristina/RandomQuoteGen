@@ -18,8 +18,12 @@ We were asked to create an app that displays random famous quotes each time a bu
 
 
 
+<<<<<<< HEAD
 ## Project Preview  
 - - -
 - - -
 
 ![hippo](https://media.giphy.com/media/KE0ftVImVTZfKTcWRd/giphy.gif)
+=======
+![hippo](https://media.giphy.com/media/KE0ftVImVTZfKTcWRd/giphy.gif)
+>>>>>>> 656b2b306a33202022a98ccee74c0fdd290a6822
