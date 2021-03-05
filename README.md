@@ -20,8 +20,7 @@ We were asked to create an app that displays random famous quotes each time a bu
 
 
 ## Project Preview  
-- - -
-- - -
+
 
 ![hippo](https://media.giphy.com/media/KE0ftVImVTZfKTcWRd/giphy.gif)
 
