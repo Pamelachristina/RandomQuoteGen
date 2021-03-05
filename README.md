@@ -15,4 +15,4 @@ We were asked to create an app that displays random famous quotes each time a bu
 
 
 
-![hippo](https://media.giphy.com/media/wj6sTPlxth25DRe6WH/giphy.gif)
+![hippo](https://media.giphy.com/media/KE0ftVImVTZfKTcWRd/giphy.gif)
