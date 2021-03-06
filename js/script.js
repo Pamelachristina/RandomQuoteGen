@@ -156,8 +156,13 @@ project 1 - A Random Quote Generator
 function setBg () {
   let randomColor = Math.floor(Math.random()*16777215).toString(16);
   document.body.style.backgroundColor = "#" + randomColor;
-  color.innerHTML = "#" + randomColor;
+  randomColor.innerHTML = "#" + randomColor;
+  
 };
+
+setInterval(function(){ setBg }, 3000);
+
+
 
 
  
