@@ -1,7 +1,7 @@
 # Random Quote Generator
 
 ## Project Overview
-I Created an app that displays random famous quotes each time a button is clicked. I selected quotes from famous historical figures, artists, scientists, celebrities, etc. I have included 10 of my favorite quotes. 
+I created an app that displays random famous quotes each time a button is clicked. I selected quotes from famous historical figures, artists, scientists, celebrities, etc. I have included 10 of my favorite quotes. 
 
 ## Learning Objectives
 
